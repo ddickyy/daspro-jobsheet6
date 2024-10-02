@@ -7,6 +7,7 @@ public class Pemilihan2Percobaan209 {
     public static void main(String[] args) {
         
     Scanner input09 = new Scanner (System.in);
+    String member;
     double total_bayar, diskon;
     int harga, pilihan_menu;
 
@@ -21,7 +22,7 @@ public class Pemilihan2Percobaan209 {
     pilihan_menu = input09.nextInt();
     input09.nextLine();
     System.out.println("Apakah punya member (y/n) = ");
-    String member = input09.nextLine();
+    member = input09.nextLine();
     System.out.println("-------------------------------------");
 
     if (member.equalsIgnoreCase("y")) {
