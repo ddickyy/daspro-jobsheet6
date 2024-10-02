@@ -75,7 +75,7 @@ public class Pemilihan2Percobaan209 {
     if (qris.equals("y")) {
         total_bayar =- 1000;
 
-    } else if (qris.equalsIgnoreCase("n"))
+    } else if (qris.equals("n"))
         total_bayar =+ 0;
 
     System.out.println("-------------------------------------");
