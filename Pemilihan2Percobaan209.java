@@ -7,7 +7,7 @@ public class Pemilihan2Percobaan209 {
     public static void main(String[] args) {
         
     Scanner input09 = new Scanner (System.in);
-    String member;
+    String member, qris;
     double total_bayar, diskon;
     int harga, pilihan_menu;
 
@@ -23,9 +23,11 @@ public class Pemilihan2Percobaan209 {
     input09.nextLine();
     System.out.println("Apakah punya member (y/n) = ");
     member = input09.nextLine();
+    System.out.println("Pembayaran menggunakan Qris (y/n) = ");
+    qris = input09.nextLine();
     System.out.println("-------------------------------------");
 
-    if (member.equalsIgnoreCase("y")) {
+    if (member.equals("y")) {
         diskon = 0.10;
         System.out.println("Besar diskon = 10%");
         if (pilihan_menu == 1) {
@@ -44,11 +46,11 @@ public class Pemilihan2Percobaan209 {
             System.out.println("Masukkan pilihan menu dengan benar");
             return;
         }
-
+    
         total_bayar = harga - (harga*diskon);
         System.out.println("Total bayar setelah diskon = " + total_bayar);
         }
-    else if (member.equalsIgnoreCase("n")) {
+    else if (member.equals("n")) {
         if (pilihan_menu == 1) {
             harga = 14000;
             System.out.println("Harga Ricebowl = " + harga);
@@ -70,6 +72,12 @@ public class Pemilihan2Percobaan209 {
     } else {
         System.out.println("Member tidak valid");
     } 
+    if (qris.equals("y")) {
+        total_bayar =- 1000;
+
+    } else if (qris.equalsIgnoreCase("n"))
+        total_bayar =+ 0;
+
     System.out.println("-------------------------------------");
 
     }
