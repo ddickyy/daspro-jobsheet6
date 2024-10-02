@@ -32,6 +32,8 @@ public class TugasMinggu6 {
             else 
             diskon = 0;
         total_bayar = harga*pembelian - (harga * diskon);
-        System.out.println("Total bayar Anda = Rp" + total_bayar);
+        System.out.println("Total Bayar Anda = Rp" + total_bayar);
+        System.out.println("Total Diskon Anda Sebesar= " + diskon);
+
     }
 }
